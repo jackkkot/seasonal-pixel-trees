@@ -6,9 +6,9 @@
     <title>秋樹</title>
     <meta
       name="description"
-      content="湖畔黃昏的一棵秋樹。點一下樹冠，葉子會落下來，也可以再讓它們長回來。"
+      content="湖畔黃昏的一棵秋樹。點一下樹冠，會再落下一些葉子，落盡後可以再長回來。"
     />
-    <link rel="preload" as="image" href="assets/scene.png" />
+    <link rel="preload" as="image" href="assets/sky.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -20,7 +20,7 @@
           height="1254"
           tabindex="0"
           role="button"
-          aria-label="秋樹。點擊或按 Enter，讓葉子落下；葉子落完後再按一次，讓葉子長回來。"
+          aria-label="秋樹。點一下會落下一些葉子，多點幾次才會落盡；落盡後再點一次，葉子長回來。"
         ></canvas>
         <figcaption class="hud">
           <div class="copy">
@@ -32,7 +32,7 @@
             <button type="button" id="drop">搖落葉子</button>
             <button type="button" id="grow">重新長葉</button>
           </div>
-          <p class="help">點一下樹冠，葉子會隨風落下。落盡之後再點一次，就會長回來。</p>
+          <p class="help">點一下樹冠，會再搖落一些葉子。多點幾次，樹冠才會落盡。落盡後再點一次，葉子長回來。</p>
         </figcaption>
       </figure>
       <noscript><p>需要開啟 JavaScript，葉子才會落下來。</p></noscript>
