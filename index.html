@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>季節像素樹</title>
+    <meta
+      name="description"
+      content="點一下樹冠，看像素葉子落下，再讓它們長回來。"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="stage">
+      <header class="intro">
+        <p class="eyebrow">秋天的午後</p>
+        <h1>季節像素樹</h1>
+        <p class="lede">
+          點一下樹冠，葉子會被風吹落。落完之後再點一次，或按下重新長葉。
+        </p>
+      </header>
+
+      <div class="frame">
+        <canvas
+          id="scene"
+          width="192"
+          height="144"
+          tabindex="0"
+          role="button"
+          aria-label="像素樹。點擊或按 Enter，讓葉子落下；葉子落完後再按一次，讓葉子長回來。"
+        ></canvas>
+      </div>
+
+      <p id="status" class="status" role="status">葉子還在樹上。</p>
+
+      <div class="controls">
+        <button type="button" id="drop">搖落葉子</button>
+        <button type="button" id="grow">重新長葉</button>
+      </div>
+
+      <p class="hint">點樹冠也一樣。葉子落光後再點一次，會長回來。</p>
+      <p class="note">這一棵是秋天。春、夏、冬會一棵一棵補上。</p>
+      <noscript><p>需要開啟 JavaScript，葉子才會落下來。</p></noscript>
+    </main>
+    <script src="tree.js"></script>
+  </body>
+</html>
