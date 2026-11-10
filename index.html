@@ -3,43 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>季節像素樹</title>
+    <title>秋樹</title>
     <meta
       name="description"
-      content="點一下樹冠，看像素葉子落下，再讓它們長回來。"
+      content="湖畔黃昏的一棵秋樹。點一下樹冠，葉子會落下來，也可以再讓它們長回來。"
     />
+    <link rel="preload" as="image" href="assets/scene.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="stage">
-      <header class="intro">
-        <p class="eyebrow">秋天的午後</p>
-        <h1>季節像素樹</h1>
-        <p class="lede">
-          點一下樹冠，葉子會被風吹落。落完之後再點一次，或按下重新長葉。
-        </p>
-      </header>
-
-      <div class="frame">
+    <main class="page">
+      <figure class="stage">
         <canvas
           id="scene"
-          width="192"
-          height="144"
+          width="1254"
+          height="1254"
           tabindex="0"
           role="button"
-          aria-label="像素樹。點擊或按 Enter，讓葉子落下；葉子落完後再按一次，讓葉子長回來。"
+          aria-label="秋樹。點擊或按 Enter，讓葉子落下；葉子落完後再按一次，讓葉子長回來。"
         ></canvas>
-      </div>
-
-      <p id="status" class="status" role="status">葉子還在樹上。</p>
-
-      <div class="controls">
-        <button type="button" id="drop">搖落葉子</button>
-        <button type="button" id="grow">重新長葉</button>
-      </div>
-
-      <p class="hint">點樹冠也一樣。葉子落光後再點一次，會長回來。</p>
-      <p class="note">這一棵是秋天。春、夏、冬會一棵一棵補上。</p>
+        <figcaption class="hud">
+          <div class="copy">
+            <p class="eyebrow">湖畔黃昏</p>
+            <h1>秋樹</h1>
+            <p id="status" class="status" role="status">畫面載入中。</p>
+          </div>
+          <div class="controls">
+            <button type="button" id="drop">搖落葉子</button>
+            <button type="button" id="grow">重新長葉</button>
+          </div>
+          <p class="help">點一下樹冠，葉子會隨風落下。落盡之後再點一次，就會長回來。</p>
+        </figcaption>
+      </figure>
       <noscript><p>需要開啟 JavaScript，葉子才會落下來。</p></noscript>
     </main>
     <script src="tree.js"></script>
