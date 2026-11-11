@@ -22,6 +22,6 @@ python3 -m http.server 8080
 
 然後前往 http://localhost:8080 。
 
-若要重切葉子，執行 `python3 tools/extract_leaves.py path/to/autumn-reference.png`。
+若要重切葉子，執行 `python3 tools/extract_leaves.py`。原畫和遮罩在 `assets/source/`。
 
 GitHub Pages 從這個儲存庫的根目錄發布。合併到 `main` 之後，網站會更新在 https://jackkkot.github.io/seasonal-pixel-trees/ 。
